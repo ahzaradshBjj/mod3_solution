@@ -1,0 +1,130 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: white;
+    font-family: 'Oxygen', sans-serif;
+}
+
+/**HEADER**/
+#header-nav {
+    background-color: grey;
+    border-radius: 0;
+     /*Top and bottom 3px, left and right 0px  */
+    border-width: 3px 0px;
+    border-color: black;
+    /* Incresing height of header-nav box */
+    min-height: 75px;
+    /* For positioning navbar-brand */
+    position: relative;
+}
+.navbar-brand {
+    /* positioning */
+    position: absolute;
+    left: 30px;
+    top: 3px;        
+}
+.navbar-brand h1{
+    font-family: 'Lora', serif;
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;        
+}
+.navbar-brand a:hover, .navbar-brand a:focus{
+    /* Deleting styling */
+    text-decoration: none;
+  }
+/* Styling button */  
+.navbar-header button.navbar-toggle {
+    border: 3px solid black;
+}
+/* Changing color of the lines of the menu and its height */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+    height: 4px;
+}
+/* Collapsable menu */
+#nav-list {
+    margin-top: 10px;
+}
+/* Titles in the menu(Chicken, beef and sushi)  */
+#nav-list a {
+    color: black;
+    /* text-align: center; */
+    /* Color of the li box */
+    background:#557c3e;
+    font-size: 1.1em;
+}
+#nav-list a:hover {
+    background: white;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: white;
+}
+/* End of Header */
+
+/** Main content **/
+#our-menu-title {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 0px;
+}
+.chicken-title  {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+                
+}
+.chicken-description  {
+    color: black;    
+    font-size: 18px;
+       
+}
+
+/* #last_content {
+    background-color: gray;
+} */
+
+/**Large devices **/
+@media (min-width: 1200px) {
+    div.col-lg-12{
+        background-color: gray;
+        width: 100%;
+        height: 1000px;
+    }
+}
+  
+/****** Medium devices *****/
+@media (min-width: 992px) and (max-width: 1199px) {
+    div.col-md-12{
+        background-color: gray;
+        width: 100%;
+        height: 1000px;            
+    }    
+}
+  
+/****** Small devices *****/
+@media (min-width: 768px) and (max-width: 991px){
+    div.col-sm-12 {
+        background-color: gray;
+        height: 1000px;
+        width: 100%;    
+    }
+}
+
+/****** Extra Small devices *****/
+@media (max-width: 767px) {
+    div.col-xs-12 {
+        background-color: gray;
+        height: 1000px;
+        width: 100%;    
+    }
+}
+
+
+
+
+
